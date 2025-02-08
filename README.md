@@ -1,7 +1,7 @@
 # PublicDrive
 
 ## Overview
-PublicDrive is a **cloud-drive alternative** developed as part of the **CDAC AAI team**. Instead of relying on external cloud servers, PublicDrive utilizes the user's local file system for storage. It enables **file uploads, sharing, and access control** while ensuring security through **JWT-based authentication**.
+PublicDrive is a **cloud-drive alternative** developed as part of the **CDAC AAI team**. Instead of relying on external cloud servers, PublicDrive utilizes the user's local file system for storage. It enables **file uploads, sharing, and access control** while ensuring security through **JWT-based authentication**. 
 
 ## Features
 - **File Management**: Upload, edit, share, and delete files securely.
@@ -9,6 +9,7 @@ PublicDrive is a **cloud-drive alternative** developed as part of the **CDAC AAI
 - **JWT Authentication**: Ensures secure access to user data.
 - **Role-Based Access Control (RBAC)**: Different user roles with specific permissions.
 - **Access Control**: Users with granted permissions can edit or view files.
+- **Password Reset**: Users can request a password reset link via email, which redirects them to a reset password page.
 - **Modern Tech Stack**: Built using **React, Redux Toolkit, MUI, Spring Boot, and MySQL**.
 
 ## Tech Stack
@@ -32,7 +33,7 @@ Ensure you have the following installed:
 ### Backend Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ayush0031/publicdrive.git
+   git clone https://github.com/your-username/publicdrive.git
    cd publicdrive/backend
    ```
 2. Configure MySQL database:
@@ -63,16 +64,19 @@ Ensure you have the following installed:
 2. **Upload Files**: Securely upload files from the local system.
 3. **Manage Access**: Assign permissions for file sharing and editing.
 4. **View & Edit**: Users with access can edit shared files.
+5. **Reset Password**: Request a password reset via email. Clicking the link in the email redirects to a reset password page.
 
 ## API Endpoints
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST   | `/api/auth/login` | User login |
-| POST   | `/api/auth/signup` | User registration |
+| POST   | `/api/auth/register` | User registration |
 | POST   | `/api/files/upload` | Upload a file |
 | GET    | `/api/files/{id}` | Get file details |
 | PUT    | `/api/files/edit/{id}` | Edit file (if authorized) |
 | DELETE | `/api/files/delete/{id}` | Delete a file |
+| POST   | `/api/auth/forgotpassword` | Request password reset link via email |
+| POST   | `/api/auth/reset-passowrd?token=` | reset password after clicking reset link |
 
 ## Contributing
 1. Fork the repository.
@@ -85,8 +89,8 @@ Ensure you have the following installed:
 This project is licensed under the MIT License.
 
 ## Contact
-For queries or contributions, reach out via GitHub Issues.
+For queries or contributions, reach out via GitHub Issues or email: **your.email@example.com**.
 
-
-
+---
+_Developed by the CDAC AAI Team._
 
