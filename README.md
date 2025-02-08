@@ -68,7 +68,7 @@ Ensure you have the following installed:
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST   | `/api/auth/login` | User login |
-| POST   | `/api/auth/register` | User registration |
+| POST   | `/api/auth/signup` | User registration |
 | POST   | `/api/files/upload` | Upload a file |
 | GET    | `/api/files/{id}` | Get file details |
 | PUT    | `/api/files/edit/{id}` | Edit file (if authorized) |
