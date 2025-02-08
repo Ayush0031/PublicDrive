@@ -89,8 +89,5 @@ Ensure you have the following installed:
 This project is licensed under the MIT License.
 
 ## Contact
-For queries or contributions, reach out via GitHub Issues or email: **your.email@example.com**.
-
----
-_Developed by the CDAC AAI Team._
+For queries or contributions, reach out via GitHub Issues
 
